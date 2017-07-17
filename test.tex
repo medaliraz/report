@@ -1,0 +1,88 @@
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}     
+\title{\LARGE \bf
+Analysis of the Power-Conversion Efficiency of \\ P3HT:PCBM Solar Cells
+}
+
+
+\author{Ghada Gharbi, Guillemette Massot and Mohamed Ali Razouane \\ Technical University of Munich% <-this % stops a space
+\thanks{*This work was conducted under the supervision of Mr. Amir Hossein Fallahpour, Dr. Ph.D.}% <-this % stops a space
+%
+}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\textbf{This paper is an elaboration of the practical course 'Design and Simulation of Nanodevices' offered at the Technical University of Munich. It presents an analysis of the power-conversion efficiency of organic solar cells based on the variation of the thickness of the active layer, the recombination rate (C) for the direct recombination model, as well as the Bandgap between the transport layers. The simulated device consisted of an organic bulk heterjunction (P3HT:PCBM). Electron/Hole transport layers (PEDOT:PSS/Ca) were used for an improved performance. The simulation results have enabled to identify an optimal combination of the analyzed parameters. A device optimization has thus been achieved.}\\
+
+\textbf{Index Terms- Organic solar cells, P3HT:PCBM, Thickness  power conversion efficiency.}
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+
+The world is undergoing an energy turning point. In the recent years, the world’s biggest economies have started to shift away from the traditional carbon-based energy sources to clean energy sources such as solar or wind. \\
+ In this process of decarbonizing the power consumption, solar photovoltaic-generated electricity has been deployed on a large scale. This is mostly due to the advantages of scalability and efficiency that photovoltaic cells (PV) offer. The technology used for the manufacturing of solar cells is currently predominantly based on inorganic materials. Silicon-based solar cells, for example, have enabled to achieve an efficiency greater than 25.6\%, whereas certain multijunction-based solar cells allowed to reach an efficiency of more than 30\%. While inorganic photovoltaic cells might be efficient from a power conversion perspective, their manufacturing process is still considered as highly complex and costly. This constitutes a market entry barrier and a challenge for economic competitivity with traditional energy sources. \\
+An interesting alternative to the inorganic photovoltaic cells are the so-called organic photovoltaic (OPV) devices. This new generation of energy cells is very promising, as organic molecules can be easily chemically tailored. In contrast to their inorganic counterparts, OPV can be produced with a large freedom of design. This is expected to help speed up the technological advancement in ubiquitous portable applications and future integrated photovoltaic devices in terms of energy harvesting.\\
+The OPV market is currently still in an early development stage. State-of-the-art OPV commercial solutions show power conversion efficiencies in the range of 1.5\% - 2.5\%. In order to ensure market competitiveness of OPV, it is critical to improve the efficiency of such cells.
+
+
+\section{THEORY}
+
+\subsection{Organic Solar Cells}
+
+Organic or plastic solar cells use carbon-compound based materials in the form of small molecules, dendrimers and polymers, to convert solar energy into electric energy. These semi conductive organic molecules have the ability to absorb light and induce the transport of electrical charges between the lowest unoccupied molecular orbital (LUMO) and highest occupied molecular orbital (HOMO). \\
+There exist various types of organic photovoltaic cells (OPVs), including single layered and multilayered structured cells. Such Polymer solar cells have many intrinsic advantages in comparison to their inorganic counterparts, such as their light weight, flexibility, and low material and manufacturing costs.
+
+\subsection{Working Principle of Organic Solar Cells}
+
+ An organic solar cell operates in four major steps. The first step is the absorption of photons or incident light particles, which is affected by the macroscopic surface property of the organic solar cell material. In a second stage, electron-hole pairs or so-called excitons are produced. This is directly determined by the material’s band structure. The third step is the exciton separation, determined by the charge distribution inside the cell. As a final step, the generated charge is collected at the electrodes. \\
+ The major factors of the efficiency of a solar cell is the number of independent charge carriers produced through the procedure. Thus, the second and third steps are mostly focused on. \\
+ In order for an incident photon to be absorbed and not scattered at the material surface, it should encapsulate a minimum energy. Only then will an electron be excited to a higher energy state. This minimum energy is referred to as the optical bandgap of the molecules within the organic material. It is in the case of organic materials equal to the energy difference between the highest occupied molecular orbital and the lowest unoccupied molecular orbital. \\
+ In order to ensure the efficiency of the photocurrent extraction, the solar cell should have a wide absorption spectrum. This aims to maximize the exciton generation and to compensate the drawbacks of short diffusion lengths of exciton. A possible way to achieve a wide absorption spectrum is to use a so-called multiband material. In this case the active layer consists of a thick bi-continuous, interpenetrating network formed from a phase-segregated blend of acceptor and donor materials.\\
+ In such bulk heterojunctions (BHJ), an absorbing site should be within an exciton diffusion length of an interface, offering to the dissociated charges a percolation path to the outside electrodes and thus minimizing the losses of possible exciton recombination. A schematic overview of the working principle is shown in Figure X. 
+
+
+\section{P3HT:PCBM Solar Cells}
+
+One of the best performing and well-studied organic solar cell, based on the BHJ concept, uses an active layer consisting of P3HT as an electron donor and PCBM as acceptor.  Solar cell devices using these materials have reached efficiencies up to 5%. \\
+As previously mentioned in X, one of the main factor that influences the performance of heterojunctions in general and P3HT:PCBM in particular is the spatial distribution of donor and acceptor regions and their phase segregation within the active layer. Due to the low exciton diffusion length in organic materials it is essential that an efficient distribution for both phase is ensured. This leads to an increase of the interfacial area within the active layer blend. As the thickness of each layer composing the cell can be engineering in order to maximize the generation of excitons in the active layer. \\
+Due to the availability of P3HT and PCBM as well as their high efficiencies in devices, these materials are well-suited for fundamental investigations of particle-bases solar cells.
+
+
+
+\subsection{Current-Voltage Characteristics of Solar Cells}
+The current-voltage characteristics are a direct indicator for both the photovoltaic performance as well as the electric behavior of an organic cell. Organic Photovoltaic cells belong to the photodiodes family and thus present the same electric properties as most photodiodes. In darkness, the current flow is close to zero until large forward bias. Under ideal circumstances the applied bias is related to the current flow according to the following equation:
+\begin{equation}
+J_{dark}(V) = J_{0}(e^{\frac{eV}{k_{B}T}}-1)
+\end{equation}
+where $J_{dark}$ is the current flow through the photodiode, $J_{0}$ is the reverse saturation current density, e is the elementary electron charge which is equal to $1.6.10^{-19}$ Coulombs, V is the applied bias voltage, $k_{B}$ is the Boltzmann constant and T is the absolute temperature. \\
+When light is applied, the JV curve shifts down by a value equal to the photocurrent (J) and the photodiode generates power. The maximum power point (MPP) refers then to the local point on the J-V curve where the product of the current and the voltage is maximal. \\
+Under Open circuit conditions $(V_{OC} =0V)$ the current flow is characteristically equal to zero. This is the point of maximum electrochemical potential of the cell. \\ 
+In organic photovoltaics studies have proven that, in the case of an Ohmic contact between the active layer and the cathode, there is a direct link between the $V_{OC}$ and the difference between the HOMO level of the donor interface and the LUMO level of the acceptor interface.\\
+ The primary figure of merit for solar cells is the power conversion efficiency $\eta _{e}$, which is the ratio of the electrical power $P_{out, max}$ generated by the device between open circuit and short circuit conditions and the total incident optical power $P_{in}$. Pout is dependent on open circuit voltage $V_{OC}$, short circuit current density $J_{SC}$ and fill factor FF. e is therefore defined according to following equation: 
+\begin{equation}
+ \eta _{e} = \frac{P_{out}}{P_{in}}=\frac{V_{OC}.J_{SC}.FF}{P_{in}}
+\end{equation}
+where FF refers to  the fill factor, which is the ratio of maximum obtainable power to the product of the open-circuit voltage and short-circuit current. \\
+ The FF gives an indication of how easily charges can be removed from a cell and describes how well the maximum power rectangle fills the area of the J-V curve. It is in general an indicator the overall quality of the diode as a device and is determined by intrinsic processes as the recombination losses or the formation of space-charges due to unbalanced transport.\\
+There are several factors that can affect the FF of a solar cell. These are closely related and often interact in complex ways. 
+\begin{thebibliography}{99}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{thebibliography}
+
+
+
+
+\end{document}
